@@ -1,0 +1,17 @@
+##Counts how many letters from a words TRUE LOVE your and the second persons name has and states it as an output##
+print("Welcome to the True Love kids game.")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+import re
+lower_case_name1 = name1.lower()
+lower_case_name2 = name2.lower()
+T = str(len(re.findall('[true]', lower_case_name1 + lower_case_name2)))
+L = str(len(re.findall('[love]', lower_case_name1 + lower_case_name2)))
+outcome = int(T + L)
+if 10>outcome or 90<outcome:
+  print("Your score is {outcome}, you go together like coke and mentos.")
+elif 40<outcome<50:
+  print(f"Your score is {outcome}, you are alright together.")
+else:
+  print(f"Your score is {outcome}.")
+  ## End
