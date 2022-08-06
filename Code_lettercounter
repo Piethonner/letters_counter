@@ -1,4 +1,4 @@
-##Counts how many letters from a words TRUE LOVE your and the second persons name has and states it as an output##
+## Counts how many letters from a words TRUE LOVE you and the second persons name has and states it as an output - Kids "lovemeter" ##
 print("Welcome to the True Love kids game.")
 name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")
